@@ -23,6 +23,7 @@
     --scrooll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scrooll-thumb-color: hsl(var(--hue-color), 12%, 80%);
     --star-color: gold;
+    --nocheck-color: rgb(255, 0, 0);
 
     /*========== Font and typography ==========*/
     --body-font: "Poppins", sans-serif;
@@ -362,6 +363,7 @@ img {
     padding: 1rem;
     border-radius: 0.5rem;
     font-weight: var(--font-medium);
+    margin-right: 10px;
 }
 
 .button:hover {
@@ -510,49 +512,67 @@ img {
     background-color: var(--first-color);
 }
 
+
 .skills__html {
-    width: 90%;
-}
-
-.skills__css {
-    width: 80%;
-}
-
-.skills__js {
-    width: 60%;
-}
-
-.skills__react {
-    width: 85%;
-}
-
-.skills__php {
-    width: 80%;
-}
-
-.skills__node {
     width: 70%;
 }
 
-.skills__firebase {
-    width: 90%;
+.skills__css {
+    width: 55%;
+}
+
+.skills__js {
+    width: 30%;
+}
+
+.skills__c {
+    width: 45%;
+}
+
+.skills__php {
+    width: 25%;
 }
 
 .skills__python {
-    width: 55px;
+    width: 60%;
 }
+
+
+
+.skills__mongodb {
+    width: 10%;
+}
+
+.skills__firebase {
+    width: 25%;
+}
+
 
 .skills__figma {
-    width: 90%;
-}
-
-.skills__sketch {
-    width: 85%;
+    width: 45%;
 }
 
 .skills__photoshop {
-    width: 85%;
+    width: 70%;
 }
+
+.skills__lightroom {
+    width: 65%;
+}
+
+
+
+
+.skills__office {
+    width: 80%;
+}
+
+.skills__premierepro {
+    width: 65%;
+}
+
+
+
 
 .skills__close .skills__list {
     height: 0;
@@ -730,6 +750,11 @@ img {
 
 .services__modal-icon {
     color: var(--first-color);
+    margin-right: var(--mb-0-25);
+}
+
+.services__modal-iconred {
+    color: var(--nocheck-color);
     margin-right: var(--mb-0-25);
 }
 
