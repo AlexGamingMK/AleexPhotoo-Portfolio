@@ -29,6 +29,7 @@
     --body-font: "Poppins", sans-serif;
 
     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+    --mb-2: 1rem;
     --big-font-size: 2rem;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
@@ -894,6 +895,80 @@ img {
     bottom: 0;
 }
 
+/*==================== Mon travail ====================*/
+
+.section-title {
+    position: relative;
+    font-size: var(--h2-font-size);
+    color: var(--first-color);
+    margin-top: var(--mb-2);
+    margin-bottom: var(--mb-4);
+    text-align: center;
+  }
+
+  .bd-grid {
+    max-width: 1024px;
+    display: grid;
+    margin-left: var(--mb-2);
+    margin-right: var(--mb-2);
+    align-items: center;
+  }
+
+  .work__container {
+    row-gap: 2rem;
+    align-items: center;
+  }
+  
+  .work__img {
+    box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+    overflow: hidden;
+    align-items: center;
+  }
+  
+  .work__img img {
+    transition: 1s;
+    border-radius: 10px;
+    align-items: center;
+  }
+  
+  .work__img img:hover {
+    transform: scale(1.1);
+    align-items: center;
+  }
+
+  /*===== CLASS CSS ===== */
+.section-title {
+    position: relative;
+    font-size: var(--h2-font-size);
+    color: var(--first-color);
+    margin-top: var(--mb-2);
+    margin-bottom: var(--mb-4);
+    text-align: center;
+  }
+  
+  .section-a {
+    color: var(--first-color);
+    font-weight: bold;
+  }
+  
+  
+  .section-title::after {
+    position: absolute;
+    content: '';
+    width: 64px;
+    height: 0.18rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 2rem;
+    background-color: var(--first-color);
+  }
+  
+  .section {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+
 /*==================== CONTACT ME ====================*/
 .contact__container {
     row-gap: 3rem;
@@ -1136,6 +1211,12 @@ img {
         grid-template-columns: 0.6fr;
         justify-content: center;
     }
+
+    .work__container {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        padding-top: 2rem;
+      }
 }
 
 @media screen and (min-width: 768px) {
@@ -1309,7 +1390,19 @@ img {
     .footer__copy {
         margin-top: 4.5rem;
     }
+
+    .work__container {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+      }
+
+    .bd-grid {
+        margin-left: auto;
+        margin-right: auto;
+      }
 }
+
+
 
 /* For large devices */
 @media screen and (min-width: 1024px) {
@@ -1358,5 +1451,12 @@ img {
 
     .contact__inputs {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .work__container {
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 3rem;
+        padding-top: 3rem;
     }
 }
