@@ -1455,7 +1455,6 @@ img {
     }
 
     .work__container {
-        align-items: center;
         grid-template-columns: repeat(3, 1fr);
         column-gap: 3rem;
         padding-top: 3rem;
